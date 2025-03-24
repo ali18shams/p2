@@ -161,6 +161,8 @@ GameObject:
   - component: {fileID: 442564536}
   - component: {fileID: 442564535}
   - component: {fileID: 442564537}
+  - component: {fileID: 442564538}
+  - component: {fileID: 442564539}
   m_Layer: 10
   m_Name: Capsule
   m_TagString: Untagged
@@ -232,7 +234,7 @@ Transform:
   m_GameObject: {fileID: 442564534}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7026243, w: -0.711561}
-  m_LocalPosition: {x: -6.67, y: -2.11, z: 0}
+  m_LocalPosition: {x: -6.49, y: -2.72, z: 0}
   m_LocalScale: {x: 0.9904, y: 6.0842, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -284,6 +286,46 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &442564538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442564534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4ae04c1a2bbda48b872d3fb4e8d652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movv: 1.8
+--- !u!50 &442564539
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442564534}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +651,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -677,7 +719,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902513846}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7102721c7c63df4fb89dcf21d50660b, type: 3}
   m_Name: 
